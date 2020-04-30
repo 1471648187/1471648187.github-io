@@ -1,0 +1,873 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*导航*/
+.daohang{
+	width: 1250px;
+	height: 80px;
+	background: rgb(0,0,0,0.5);
+	position: absolute;
+	top: 50px;
+	left: 335px;
+	z-index: 1;
+}
+
+.daohang .logo img{
+	padding-top: 6px;
+	padding-left: 29px;
+	float: left;
+}
+
+.daohang .logo p{
+	float: left;
+	font-size: 26px;
+	color: #f2e3bb;
+	padding-top: 22px;
+	padding-left: 10px;
+}
+
+.daohang ._daohang{
+	width: 696px;
+	height: 80px;
+	position: absolute;
+	left: 610px;
+}
+
+.daohang ._daohang  .ul li{
+	float: left;
+	width: 120px;
+	text-align: center;
+	height: 80px;
+	font-size: 20px;
+	color: #d7be79;
+	line-height: 80px;
+	cursor: pointer;
+}
+
+.daohang ._daohang  .ul li:nth-child(1){
+	width: 120px;
+	height: 77px;
+	background: #000;
+	color: #fff;
+	border-top: 3px solid #f2e3bb;
+}
+
+.daohang ._daohang  .ul li:hover{
+	border-top: 3px solid #F2E3BB;
+	width: 120px;
+	height: 77px;
+	background: #000;
+}
+
+.daohang .qqq{
+	width: 120px;
+	position: absolute;
+	bottom: -150px;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	display: none;
+}
+
+.daohang .qqq  p{
+	line-height: 50px;
+	font-size: 12px;
+	height: 50px;
+	width: 100%;
+	color: #FFFFFF;
+}
+
+.daohang .qqq p:hover{
+	background: rgba(217,200,154,1);
+}
+
+.daohang ._daohang ul li:nth-child(3):hover .qqq{
+	display: block;
+}
+
+/*banner*/
+.banner{
+	width: 1920px;
+	height: 650px;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner .lunbo{
+	width: calc(1920px*6);
+	height: inherit;
+	position: absolute;
+	transition: all 1s ease-out;
+	margin-left: -1920px;
+	/* transform: translateX(-1920px); */
+}
+
+.banner .lunbo img{
+	display: block;
+	float: left;
+	width: 1920px;
+	height: 650px;
+}
+
+.banner #icon{
+	position: absolute;
+	top: 630px;
+	left: 920px;
+	bottom: 20px;
+	z-index: 1;
+}
+
+.banner #icon li{
+	width: 15px;
+	height: 15px;
+	list-style: none;
+	background: #FFFFFF;
+	text-align: center;
+	margin-left: 10px;
+	line-height: 30px;
+	border-radius: 50px;
+	float: left;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.banner .zzz{
+	position: absolute;
+	top: 40%;
+	left: 340px;
+	display: block;
+	width: 50px;
+	height: 80px;
+	background: rgb(0,0,0,.5);
+	background: url(../img/lb.png);
+	background-position: 4px 10px;
+	opacity: 0.5;
+	transition: all 1s;
+	display: none;
+}
+
+.banner .yyy{
+	position: absolute;
+	top: 40%;
+	right: 340px;
+	display: block;
+	width: 50px;
+	height: 80px;
+	background: rgb(0,0,0,.5);
+	background: url(../img/lb.png);
+	background-position: -52px 10px;
+	opacity: 0.5;
+	transition: all 1s;
+	display: none;
+}
+
+.banner .zzz:hover{
+	opacity: 1;
+}
+
+.banner .yyy:hover{
+	opacity: 1;
+}
+
+.banner #icon .aa{
+	background: red;
+}
+
+.banner #zi{
+	width: 325px;
+	height: 37px;
+	position: absolute;
+	top: 330px;
+	left: 860px;
+}
+
+.banner #zi li{
+	float: left;
+	color: #FFFFFF;
+}
+
+.banner #zi li:nth-child(1){
+	font-family: "仿宋";
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+
+.banner #zi li:nth-child(2){
+	font-family: "方正正粗黑简体";
+	font-size: 36px;
+	position: absolute;
+	top: -6px;
+	left: 120px;
+	letter-spacing: 3px;
+}
+
+.banner #zi li span{
+	display: block;
+	width: 30px;
+	height: 1px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 17px;
+	left: 76px;
+}
+
+.banner .show{
+	position: absolute;
+	top: 367px;
+	left: 950px;
+}
+
+.banner .show .show1{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: "苹方";
+}
+
+.banner .show .show2{
+	color: #FFFFFF;
+	font-size: 28px;
+	padding-left: 7px;
+}
+
+.banner .show .show3{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: "苹方";
+	padding-left: 10px;
+}
+
+.banner .eee{
+	width: 195px;
+	height: 35px;
+	background: #6f6d95;
+	position: absolute;
+	top: 420px;
+	left: 950px;
+}
+
+.banner .eee p{
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.banner .ter{
+	width: 1920px;
+	height: 26px;
+	background: rgb(0,0,0,0.5);
+	position: absolute;
+	top: 624px;
+}
+
+.banner .yuan1{
+	float: left;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 7px;
+	left: 945px;
+}
+
+.banner .yuan2{
+	float: left;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 7px;
+	left: 965px;
+}
+
+/*案例展示*/
+.alzs{
+	width: 1920px;
+	height: 586px;
+	overflow: hidden;
+	padding-bottom: 50px;
+	background-color: #eeeeee;
+	position: relative;
+}
+
+.alzs h5{
+	font-size: 23px;
+	color: #505050;
+	letter-spacing: 18px;
+	position: absolute;
+	top: 50px;
+	left: 845px;
+}
+
+.alzs .demoList{
+	width: 1000px;
+	text-align: center;
+	height: 30px;
+	position: absolute;
+	top: 125px;
+	left: 420px;
+	line-height: 30px;
+}
+
+.alzs ul li{
+	float: left;
+	width: 250px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.hover{
+	color: #fff;
+	background: #000000;
+}
+
+.alzs .tp{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	width: 1150px;
+	height: 406px;
+}
+
+.content{
+	width:1150px ;
+	height: 406px;
+	position: relative;
+	margin: 200px  auto 0 auto;
+}
+
+.alzs .content .tp img{
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.alzs .content .tp .dyik{
+	padding-top: 30px;
+}
+
+.alzs .content .tp .dyik li{
+	width: 380px;
+	height: 28px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.alzs .content .tp .dyik li:hover{
+	color: red;
+}
+
+.alzs .content .tp .derk{
+	padding-top: 30px;
+}
+
+.alzs .content .tp .derk li{
+	width: 380px;
+	height: 28px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.alzs .content .tp .derk li:hover{
+	color: red;
+}
+
+.alzs .content .tp .disank{
+	padding-top: 30px;
+}
+
+.alzs .content .tp .disank li{
+	width: 380px;
+	height: 28px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.alzs .content .tp .disank li:hover{
+	color: red;
+}
+
+
+/*设计风格*/
+.sjfg{
+	width: 1920px;
+	height: 540px;
+	position: relative;
+}
+
+.sjfg h5{
+	font-size: 23px;
+	color: #505050;
+	letter-spacing: 18px;
+	position: absolute;
+	top: 50px;
+	left: 845px;
+}
+
+.fff{
+	width: 200px;
+	height: 400px;
+	position: absolute;
+	top: 140px;
+	left: 1082px;
+	z-index: 1;
+}
+
+.fff .ous{
+	font-size: 22px;
+	padding-top: 30px;
+	padding-left: ;
+}
+
+.fff .xian{
+	width: 30px;
+	height: 1px;
+	background: #D7BE79;
+	position: absolute;
+	top: 73px;
+	left: 0;
+}
+
+.fff p{
+	padding-top: 30px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+.fff img{
+	padding-top: 40px;
+	padding-left: 65px;
+}
+
+.sjfg .zxlb{
+	width: 1200px;
+	height: 400px;
+	background-color: #C2A659;
+	position: absolute;
+	top: 140px;
+	left: 360px;
+	overflow: hidden;
+
+}
+
+.sjfg .zxlb .hezi{
+	width: 1200px;
+	height: auto;
+	background-color: #C2A659;
+	transition:  all .5s;
+}
+
+.hezi img{
+	display: block;
+}
+.sjfg #bian{
+	position: absolute;
+	top: 85%;
+	right: 10px;
+	color: red;
+}
+
+.sjfg #bian li{
+	width: 30px;
+	height: 30px;
+	list-style: none;
+	float: left;
+	cursor: pointer;
+	transition: all 1s; 
+}
+
+.sjfg #bian .tianjia{
+	font-size: 19px;
+	color: #fff;
+}
+
+.sjfg span{
+	font-size: 24px;
+	letter-spacing: 5px;
+	position: absolute;
+	top: 30px;
+	left: 790px;
+}
+
+/*关于中心*/
+.gyzx{
+	width: 1180px;
+	height: 300px;
+	background-color: aliceblue;
+	margin: 0 auto;
+	position: relative;
+}
+
+.gyzx h5{
+	font-size: 23px;
+	color: #505050;
+	letter-spacing: 18px;
+	position: absolute;
+	top: 50px;
+	left: 475px;
+}
+
+.gyzx span{
+	font-size: 19px;
+	position: absolute;
+	top: 130px;
+	left: 50px;
+}
+
+.gyzx p{
+	font-size: 6px;
+	text-indent: 2em;
+	position: absolute;
+	top: 180px;
+	left: 50px;
+}
+
+.gyzx .tupian{
+	width: 590px;
+	height: 154px;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 125px;
+	left: 545px;
+}
+
+.gyzx .tupian .tianp{
+	width: 590px;
+	height: 154px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.2);
+	display: none;
+}
+
+.gyzx .tupian:hover .tianp{
+	display: block;
+}
+
+/*新闻中心*/
+.xwzx{
+	width: 1200px;
+	height: 470px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.xwzx h5{
+	font-size: 23px;
+	color: #505050;
+	letter-spacing: 18px;
+	position: absolute;
+	top: 60px;
+	left: 485px;
+}
+
+.xwzx .zuo{
+	width: 550px;
+	height: 300px;
+	position: absolute;
+	top: 170px;
+}
+
+.xwzx .zuo .tupian1{
+	width: 540px;
+	height: 184px;
+	background: rgba(0,0,0,.2);
+}
+
+.xwzx .zuo .tupian1 .hjerzi{
+	width: 540px;
+	height: 184px;
+	background: rgba(0,0,0,.2);
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.xwzx .zuo .tupian1:hover .hjerzi{
+	display: block;
+}
+
+.xwzx .zuo ._zuo{
+	letter-spacing: 1px;
+	position: absolute;
+	top: 195px;
+	left: 0px;
+}
+
+.xwzx .zuo p{
+	letter-spacing: 1px;
+	font-size: 9px;
+	text-indent: 2em;
+	position: absolute;
+	top: 235px;
+	left: 0px;
+}
+
+.xwzx .xx{
+	position: absolute;
+	top: 170px;
+	left: 596px;
+}
+
+.xwzx .you{
+	width: 550px;
+	height: 300px;
+	position: absolute;
+	top: 170px;
+	left: 650px;
+}
+
+.xwzx .you .tupian2{
+	width: 540px;
+	height: 184px;
+	background: rgba(0,0,0,.2);
+}
+
+.xwzx .you .tupian2 .hjsunzi{
+	width: 540px;
+	height: 184px;
+	background: rgba(0,0,0,.2);
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.xwzx .you .tupian2:hover .hjsunzi{
+	display: block;
+}
+
+.xwzx .you ._you{
+	letter-spacing: 1px;
+	position: absolute;
+	top: 195px;
+	left: 0px;
+}
+
+.xwzx .you p{
+	letter-spacing: 1px;
+	font-size: 9px;
+	text-indent: 2em;
+	position: absolute;
+	top: 235px;
+	left: 0px;
+}
+
+/*设计师风采*/
+.sjsfc{
+	width: 1200px;
+	height: 690px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.sjsfc h5{
+	font-size: 23px;
+	color: #505050;
+	letter-spacing: 18px;
+	position: absolute;
+	top: 70px;
+	left: 455px;
+}
+
+.sjsfc .t1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 170px;
+}
+
+.sjsfc .t1 li{
+	float: left;
+	position: relative;
+}
+
+.sjsfc .t1  li .tb{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 429px;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+	z-index: 0;
+}
+
+.sjsfc .t1 li:hover .tb{
+	display: block;
+}
+
+.sjsfc .t1  li .tb .yuyue{
+	width: 100px;
+	height: 40px;
+	border: 1px solid #c7ac41;
+	position: absolute;
+	top: 220px;
+	left: 35px;
+}
+
+.sjsfc .t1  li .tb .yuyue p{
+	color: #c7ac41;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.sjsfc .z1{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left: 30px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+
+.sjsfc .z2{
+	display: block;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	position: absolute;
+	bottom: 70px;
+	left: 30px;
+}
+
+.sjsfc .z3{
+	display: block;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+}
+
+
+
+/*信息展示*/
+.xxzs{
+	width: 1920px;
+	height: 230px;
+	position: relative;
+	background-image: url(../img/1501555088.jpg);
+}
+
+.xxzs .shuzi ul{
+	position: absolute;
+	top: 80px;
+	left: 290px;
+}
+
+.xxzs .shuzi ul li{
+	float: left;
+	color: #FFFFFF;
+	font-size: 60px;
+	font-weight: 900;
+	padding-left: 150px;
+}
+
+.xxzs .wenzi ul{
+	position: absolute;
+	top: 180px;
+	left: 230px;
+}
+
+.xxzs .wenzi ul li{
+	float: left;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding-left: 220px;
+}
+
+.xxzs .wenzi ul li:nth-child(2){
+	padding-left: 205px;
+}
+
+.xxzs .wenzi ul li:nth-child(3){
+	padding-left: 230px;
+}
+
+.xxzs .wenzi ul li:nth-child(4){
+	padding-left: 205px;
+}
+
+/*版权*/
+.banquan{
+	width: 1920px;
+	height: 250px;
+	background-color: #30333a;
+	margin-top: 70px;
+	position: relative;
+}
+
+.banquan ul{
+	position: absolute;
+	top: 90px;
+	left: 380px;
+	height: 20px;
+	align-items: center;
+	color: #fff;
+}
+
+.banquan ul li{
+	color: #FFFFFF;
+	float: left;
+	font-size: 12px;
+	margin-top: 2px;
+	width: 70px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.banquan ul span{
+	float: left;
+}
+
+.banquan ul li:hover{
+	color: red;
+}
+
+.banquan ul li:nth-child(1){
+	width: 52px;
+}
+
+.banquan p{
+	color: #CCCCCC;
+	font-size: 8px;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 130px;
+	left: 394px;
+}
+
+.banquan span{
+	display: block;
+	color: #CCCCCC;
+	font-size: 8px;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 150px;
+	left: 394px;
+}
+
+.banquan img{
+	position: absolute;
+	top: 50px;
+	left: 1325px;
+}
